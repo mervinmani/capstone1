@@ -4,16 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="./index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="home">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="top">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#simple-nav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="simple-nav">
+				<ul class="navbar-nav mx-auto">
+					<li class="mx-3">
+						<a href="./index.html" class="nav-link">Home</a>
+					</li>
+					<li class="mx-3">
+						<a href="./career.html" class="nav-link">Credentials</a>
+					</li>
+					<li class="mx-3">
+						<a href="./projects.html" class="nav-link">Portfolio</a>
+					</li>
+					<li class="mx-3">
+						<a href="#contact" class="nav-link">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+
         <div class="container-fluid" id="bgImage">
                 <div class="d-flex flex-row justify-content-around" id="gradient">
                     <marquee>
                         <img src="./images/logo-mongodb.png" style="width:80px">
-                        <img src="./images/logo-nodejs.png" style="width:80px">
+                        <img src="./images/logo-nodejs.jpg" style="width:80px">
                         <img src="./images/logo-expressjs.png" style="width:80px">
                         <img src="./images/logo-react.png" style="width:80px">
                         <img src="./images/logo-heroku.png" style="width:80px">
@@ -28,25 +54,9 @@
                 
             
             <div class="container">
-               <div class=" d-flex jumbotron justify-content-center my-3 p-4 flex-column align-items-center" id="banner">
-                            <div class="text-center pb-3">
-                                <ul class="list-group list-group-horizontal m-2" id="navBar">
-                                    <li>
-                                        <a href="./index.html">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="./career.html">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="./gallery.html">Gallery</a>
-                                    </li>
-                                    <li>
-                                        <a href="./tools.html">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </div>
+               <div class=" d-flex jumbotron justify-content-center my-3 p-4 flex-column align-items-center" id="banner">  
                         <div class="col-10 col-md-2">
-                            <img src="./images/my_pic.jpg" class="img-fluid rounded-circle">
+                            <img src="./images/pic ko.png" id="picko" class="img-fluid rounded-circle">
                         </div>
                         <h1 class="text-center mt-2">Mervin Adrian D. Mani</h1>
                         <div class="container">
@@ -68,18 +78,18 @@
                             </div>
                         </div>
                         <div class="col-md-8">
-                            <p class="text-justify my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p id="message" class="text-center my-2">Over fourteen years’ experience in computer related endeavor in the following areas: computer rental and services, education, recruitment agency, retail-hardware industry, web development and software engineering with proven abilities in strategic planning, supervisory, managing projects and improving efficiency in the workplace.</p>
                     </div>
-                </div>
+                </div>`
             </div>
-            <div class="d-flex flex-row justify-content-center m-5">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="manimervin@gmail.com">Leave a message</button>
-            </div>
+            <div class="d-flex flex-row justify-content-center mb-5 pb-3">
+                <button type="button" class="btn btn-secondary p-2" data-toggle="modal" data-target="#exampleModal" data-whatever="manimervin@gmail.com"><h3>Say Hi! <img src="./images/click.png"></h3></button>
+            </div>	
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                      <h5 class="modal-title" id="exampleModalLabel">I want to hear from you</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
@@ -87,33 +97,55 @@
                     <div class="modal-body">
                       <form>
                         <div class="form-group">
-                          <label for="recipient-name" class="col-form-label">Recipient:</label>
+                          <label for="recipient-name" class="col-form-label">email:</label>
                           <input type="text" class="form-control" id="recipient-name" required autocomplete>
                         </div>
                         <div class="form-group">
-                          <label for="message-text" class="col-form-label">Message:</label>
+                          <label for="message-text" class="col-form-label">message:</label>
                           <textarea class="form-control" id="message-text" required autocomplete></textarea>
                         </div>
                       </form>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button onclick="leaveMessage()" type="button" class="btn btn-primary">Send message</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                      <button onclick="leaveMessage()" type="button" class="btn btn-primary">Send your hello</button>
                     </div>
                   </div>
                 </div>
               </div>
-            <div><h1>.</h1></div>
-            <div><h1>.</h1></div>
-            <div><h1>.</h1></div>
-            <div><h1>.</h1></div>
-            <div><h1>.</h1></div>
-            <footer class="fixed-bottom p-3 text-center text-white">
-                <h6 class="m-0 p-0">&copy; All Rights Reserved 2022</h6>
-            </footer>
-        </div>  
-        
-
+        </div>
+        <div class="text-white bg-dark" id="contact" style="viewport">
+        	<div class="row mx-auto">
+        		<div class="col-md-3 container-fluid order-2">
+        			<h3 class="text-center pt-5">Say Hello!</h3>
+        			<form onsubmit="myFunction()">
+        			  <div class="form-group">
+        			    <label for="exampleFormControlInput1">emails:</label>
+        			    <input type="email" class="form-control" placeholder="name@example.com" required autocomplete>
+        			  </div>
+        			  <div class="form-group">
+        			    <label for="exampleFormControlTextarea1">message:</label>
+        			    <textarea class="form-control" rows="7" required autocomplete></textarea>
+        			  </div>
+        			  <button type="submit" class="btn btn-outline-success btn-block mb-2">Submit</button>  
+        			  <button type="reset" class="btn btn-outline-warning btn-block">Reset</button>
+        			</form>
+        		</div>
+        		<div class="col-md-6 mx-5 order-1">
+        			<h3 class="text-center pt-5">Hey, come visit us.</h3>
+        			<div class ="container-fluid"style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(Vinche%20Computer%20Solutions)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/truck-gps/">Vinche Computer Solutions</a></iframe></div>
+        		</div>
+        	</div> 	
+        </div>
+    <div class="d-flex flex-row justify-content-center m-0 p-0 bg-dark"> 
+    	<a href="#top"><h3>▲</h3></a>
+    </div>
+    <div class="d-flex flex-row justify-content-center m-0 p-0 bg-dark"> 
+    	<a href="#top"><h6>top</h6></a>
+    </div>  
+    <footer class="p-3 text-center text-white bg-dark">
+        <h6 class="m-0 p-0">&copy; All Rights Reserved 2022</h6>
+    </footer>
    <!-- JS Dependencies -->
    <script>
     function leaveMessage() {

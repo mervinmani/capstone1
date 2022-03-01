@@ -5,39 +5,51 @@
     box-shadow: 20rem;
     color: black;
     text-shadow: 100rem;
-}   
-#bgImage{
-    background-image: url(./images/page_bg2.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-#navBar, #navbar1{
-    list-style-type: none;
-    font-size: x-large;
-}
-#navBar > li > a{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    color: black;
-    box-shadow: #1A233A;
+} 
+
+#message {
+  text-shadow: 2px 2px 5px white;
 }
 
-i + h4{
-    font-size-adjust: calc(vw);
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
+#home, #top{
+    background-color: lightgray;
+    font-family: 'Roboto', serif;
+    font-size: 20px;
+}
+
+
+button > img{
+    width: 20px;
+    height: 20px;
+}
+a:hover{
+   text-shadow: white;
+}
+
+/* caroisel ===================================================================*/
 .carousel-item.active,.carousel-item-next,.carousel-item-prev{
     display:block;
 }
-#gradient {
-    background-image: linear-gradient(to center, gray, gray
-    );
-  }
 
-  marquee > img{
+marquee > img{
      margin-top: 2rem;
      margin-right: 5rem;
-  }
+}
+
+#footer {
+    font-size: 5px ;
+}
+
+#top{
+    background-color: lightgray;
+}
+
+
  /* gallery ============================================================================================*/
 
 
@@ -45,17 +57,11 @@ i + h4{
   /* career =================================================================*/
 
 #bodyCareer{
-    margin-top:20px;
     color: #bcd0f7;
-    background: #1A233A;
-    background-image: url(./images/page_bg2.jpeg);
-    background-size: cover;
-    background-position: center;
 }
 
 .timeline {
     position: relative;
-    background: #272e48;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
