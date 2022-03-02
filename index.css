@@ -11,12 +11,44 @@
   text-shadow: 2px 2px 5px white;
 }
 
+#card{
+    width: 18rem;"
+}
+hr{
+    width: 10%;
+    height: 20px;
+    background-color: orange;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-width: 2px;
+    border-color: green;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto Slab', serif;
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tools-stack{
+    height: 100px;
+    margin-top: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#html{
+    background-image: url(./images/html.png);
 }
 
 #home, #top{
@@ -33,9 +65,9 @@ button > img{
     width: 20px;
     height: 20px;
 }
-a:hover{
-   text-shadow: white;
-}
+
+
+
 
 /* caroisel ===================================================================*/
 .carousel-item.active,.carousel-item-next,.carousel-item-prev{
@@ -45,6 +77,7 @@ a:hover{
 marquee > img{
      margin-top: 2rem;
      margin-right: 5rem;
+     width:80px
 }
 
 #footer {
