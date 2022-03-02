@@ -12,6 +12,9 @@
 }
 
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto Slab', serif;
 }
@@ -22,6 +25,9 @@
     font-size: 20px;
 }
 
+#h2, #h5, #diva{
+    text-align: center;
+}
 
 button > img{
     width: 20px;
