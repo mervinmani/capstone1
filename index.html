@@ -12,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body id="home">
+     <div id="landingPage" style="height: 100vh;">  
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="top">
 			<a class="navbar-brand" href="#home">
 				<img src="./images/nav-logo.png" width="50" height="30">
@@ -22,7 +23,7 @@
 			<div class="collapse navbar-collapse" id="simple-nav">
 				<ul class="navbar-nav mx-auto">
 					<li class="mx-3">
-						<a href="./index.html" class="nav-link">Home</a>
+						<a href="./index.html#landingPage" class="nav-link">Home</a>
 					</li>
 					<li class="mx-3">
 						<a href="./career.html" class="nav-link">Credentials</a>
@@ -54,8 +55,9 @@
                         <img src="./images/logo-bootstrap.png">
                     </marquee>
                 </div>
-                
-            
+        
+        </div>      
+   
             <div class="container">
                <div class=" d-flex jumbotron justify-content-center my-3 p-4 flex-column align-items-center" id="banner">  
                         <div class="col-10 col-md-2">
@@ -82,10 +84,11 @@
                         </div>
                         <div class="col-md-8">
                             <p id="message" class="text-center my-2">Over fourteen years’ experience in computer related endeavor in the following areas: computer rental and services, education, recruitment agency, retail-hardware industry, web development and software engineering with proven abilities in strategic planning, supervisory, managing projects and improving efficiency in the workplace.</p>
-                    </div>
-                </div>`
+                        </div>
+                </div>
             </div>
-            <div class="d-flex flex-row justify-content-center mb-5 pb-3">
+            
+            <div class="d-flex flex-row justify-content-center mt-5 pt-5 pb-3">
                 <button type="button" class="btn btn-secondary p-2" data-toggle="modal" data-target="#exampleModal" data-whatever="manimervin@gmail.com"><h3>Say Hi! <img src="./images/click.png"></h3></button>
             </div>	
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -116,7 +119,9 @@
                   </div>
                 </div>
               </div>
+    
         </div>
+        <div class="container-fluid bg-dark" style="height: 100vh">
         <div class="text-white bg-dark" id="contact" style="viewport">
         	<div class="row mx-auto">
         		<div class="col-md-3 container-fluid order-2">
@@ -140,15 +145,16 @@
         		</div>
         	</div> 	
         </div>
-    <div class="d-flex flex-row justify-content-center m-0 p-0 bg-dark"> 
+        <div class="d-flex flex-row justify-content-center mt-5 pt-5 bg-dark"> 
     	<a href="#top"><h3>▲</h3></a>
+        </div>
+        <div class="d-flex flex-row justify-content-center m-0 p-0 bg-dark"> 
+    	   <a href="#top"><h6>top</h6></a>
+        </div>  
+        <footer class="text-center text-white bg-dark">
+            <h6 class="mt-4 pt-4">&copy; All Rights Reserved 2022</h6>
+        </footer>
     </div>
-    <div class="d-flex flex-row justify-content-center m-0 p-0 bg-dark"> 
-    	<a href="#top"><h6>top</h6></a>
-    </div>  
-    <footer class="p-3 text-center text-white bg-dark">
-        <h6 class="m-0 p-0">&copy; All Rights Reserved 2022</h6>
-    </footer>
    <!-- JS Dependencies -->
    <script>
     function leaveMessage() {
